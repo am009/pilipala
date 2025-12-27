@@ -100,7 +100,7 @@ class MainController extends GetxController {
         navBarSort.indexOf(a['id']).compareTo(navBarSort.indexOf(b['id'])));
     navigationBars.value = defaultNavTabs;
     int defaultHomePage =
-        setting.get(SettingBoxKey.defaultHomePage, defaultValue: 0) as int;
+        setting.get(SettingBoxKey.defaultHomePage, defaultValue: 2) as int;
     int defaultIndex =
         navigationBars.indexWhere((item) => item['id'] == defaultHomePage);
     // 如果找不到匹配项，默认索引设置为0或其他合适的值
